@@ -1,0 +1,259 @@
+/* kathrynwave GTK3 user overrides.
+ * Color-only rules for the user CSS provider.
+ */
+
+window.background,
+.background,
+terminal-window,
+terminal-window notebook,
+terminal-window notebook > stack,
+terminal-window paned {
+  color: #251327;
+  background-color: rgba(246, 230, 248, 0.90);
+}
+
+window.desktopwindow,
+window.desktopwindow.background,
+.desktopwindow,
+.desktopwindow.background {
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  box-shadow: none;
+}
+
+.view,
+iconview,
+textview text {
+  color: #251327;
+  background-color: rgba(255, 247, 253, 0.86);
+}
+
+.titlebar:not(headerbar),
+headerbar,
+headerbar.default-decoration,
+headerbar.default-decoration.titlebar,
+.default-decoration.titlebar:not(headerbar),
+window.csd > .titlebar,
+window.csd > .titlebar:not(headerbar),
+window.csd headerbar,
+window.csd headerbar.titlebar,
+window.csd.unified:not(.solid-csd) headerbar,
+window.csd.unified:not(.solid-csd):not(.fullscreen):not(.maximized) decoration-overlay ~ * headerbar,
+window.background .titlebar,
+terminal-window headerbar,
+terminal-window .titlebar:not(headerbar) {
+  color: #fff7fd;
+  background: rgba(216, 51, 143, 0.88);
+  background-color: rgba(216, 51, 143, 0.88);
+  background-image: image(rgba(216, 51, 143, 0.88));
+  box-shadow: none;
+  border-color: rgba(216, 51, 143, 0.34);
+}
+
+.titlebar:backdrop:not(headerbar),
+headerbar:backdrop,
+headerbar.default-decoration:backdrop,
+headerbar.default-decoration.titlebar:backdrop,
+.default-decoration.titlebar:backdrop:not(headerbar),
+window.csd > .titlebar:backdrop,
+window.csd > .titlebar:backdrop:not(headerbar),
+window.csd headerbar:backdrop,
+window.csd headerbar.titlebar:backdrop,
+window.csd.unified:not(.solid-csd) headerbar:backdrop,
+window.csd.unified:not(.solid-csd):not(.fullscreen):not(.maximized) decoration-overlay ~ * headerbar:backdrop,
+window.background .titlebar:backdrop,
+terminal-window headerbar:backdrop,
+terminal-window .titlebar:backdrop:not(headerbar) {
+  color: #4b2044;
+  background-color: rgba(239, 198, 231, 0.86);
+  background-image: image(rgba(239, 198, 231, 0.86));
+  box-shadow: none;
+  border-color: rgba(207, 147, 200, 0.50);
+}
+
+headerbar box,
+headerbar stack {
+  background-color: transparent;
+}
+
+headerbar button.titlebutton,
+.titlebar button.titlebutton,
+window.csd headerbar button.titlebutton,
+terminal-window headerbar button.titlebutton {
+  color: #fff7fd;
+  background-color: rgba(255, 247, 253, 0.14);
+  background-image: none;
+  border-color: rgba(255, 227, 246, 0.34);
+  box-shadow: none;
+  text-shadow: none;
+}
+
+headerbar button.titlebutton:hover,
+.titlebar button.titlebutton:hover,
+window.csd headerbar button.titlebutton:hover,
+terminal-window headerbar button.titlebutton:hover {
+  color: #ffffff;
+  background-color: rgba(255, 247, 253, 0.24);
+  border-color: rgba(255, 247, 253, 0.56);
+}
+
+headerbar button.titlebutton:active,
+.titlebar button.titlebutton:active,
+window.csd headerbar button.titlebutton:active,
+terminal-window headerbar button.titlebutton:active {
+  color: #ffffff;
+  background-color: rgba(92, 12, 84, 0.30);
+}
+
+headerbar button.titlebutton.close:hover,
+.titlebar button.titlebutton.close:hover,
+window.csd headerbar button.titlebutton.close:hover,
+terminal-window headerbar button.titlebutton.close:hover {
+  color: #ffffff;
+  background-color: #d9385e;
+  border-color: #ffb3c6;
+}
+
+headerbar button.titlebutton image,
+.titlebar button.titlebutton image,
+window.csd headerbar button.titlebutton image,
+terminal-window headerbar button.titlebutton image {
+  color: inherit;
+  -gtk-icon-shadow: none;
+}
+
+headerbar button.titlebutton:backdrop,
+.titlebar button.titlebutton:backdrop,
+window.csd headerbar button.titlebutton:backdrop,
+terminal-window headerbar button.titlebutton:backdrop {
+  color: #fff7fd;
+  background-color: rgba(255, 247, 253, 0.16);
+  border-color: rgba(255, 247, 253, 0.38);
+}
+
+terminal-window headerbar button,
+terminal-window headerbar button.flat,
+terminal-window headerbar button.image-button,
+terminal-window headerbar button.titlebutton,
+terminal-window .titlebar button,
+terminal-window .titlebar button.flat,
+terminal-window .titlebar button.image-button,
+terminal-window .titlebar button.titlebutton,
+terminal-window notebook > header button,
+terminal-window notebook > header tab button.flat {
+  color: #fff7fd;
+  background-image: none;
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+}
+
+terminal-window headerbar button:backdrop,
+terminal-window headerbar button.flat:backdrop,
+terminal-window headerbar button.image-button:backdrop,
+terminal-window headerbar button.titlebutton:backdrop,
+terminal-window .titlebar button:backdrop,
+terminal-window .titlebar button.flat:backdrop,
+terminal-window .titlebar button.image-button:backdrop,
+terminal-window .titlebar button.titlebutton:backdrop,
+terminal-window notebook > header button:backdrop,
+terminal-window notebook > header tab button.flat:backdrop {
+  color: #fff7fd;
+  background-image: none;
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+}
+
+terminal-window headerbar button image,
+terminal-window headerbar button label,
+terminal-window .titlebar button image,
+terminal-window .titlebar button label,
+terminal-window notebook > header button image,
+terminal-window notebook > header button label,
+terminal-window notebook > header tab button.flat image {
+  color: inherit;
+  opacity: 1;
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+}
+
+terminal-window notebook > header,
+terminal-window notebook > header.top,
+terminal-window notebook > header > tabs,
+terminal-window notebook > header.top > tabs {
+  color: #fff7fd;
+  background-color: rgba(194, 42, 132, 0.72);
+  background-image: none;
+  border-color: rgba(216, 51, 143, 0.32);
+}
+
+terminal-window notebook > header > tabs > tab,
+terminal-window notebook > header.top > tabs > tab,
+terminal-window notebook tab {
+  color: #fff7fd;
+  background-color: rgba(194, 42, 132, 0.76);
+  background-image: none;
+  border-color: rgba(255, 227, 246, 0.34);
+}
+
+terminal-window notebook > header > tabs > tab:hover,
+terminal-window notebook > header.top > tabs > tab:hover,
+terminal-window notebook tab:hover {
+  color: #ffffff;
+  background-color: rgba(216, 51, 143, 0.88);
+}
+
+terminal-window notebook > header > tabs > tab:checked,
+terminal-window notebook > header.top > tabs > tab:checked,
+terminal-window notebook tab:checked {
+  color: #251327;
+  background-color: rgba(255, 247, 253, 0.96);
+  background-image: none;
+  border-color: rgba(255, 247, 253, 0.86);
+  box-shadow: inset 0 -3px #00d9ff, inset 0 0 0 1px rgba(216, 51, 143, 0.32);
+}
+
+terminal-window notebook > header > tabs > tab label,
+terminal-window notebook > header.top > tabs > tab label,
+terminal-window notebook tab label,
+terminal-window notebook > header > tabs > tab spinner,
+terminal-window notebook > header.top > tabs > tab spinner,
+terminal-window notebook tab spinner,
+terminal-window notebook > header > tabs > tab image,
+terminal-window notebook > header.top > tabs > tab image,
+terminal-window notebook tab image {
+  color: inherit;
+  opacity: 1;
+  text-shadow: none;
+}
+
+terminal-window notebook > header > tabs > tab:backdrop,
+terminal-window notebook > header.top > tabs > tab:backdrop,
+terminal-window notebook tab:backdrop {
+  color: #fff7fd;
+  background-color: rgba(194, 42, 132, 0.68);
+  border-color: rgba(255, 227, 246, 0.30);
+}
+
+terminal-window notebook > header > tabs > tab:checked:backdrop,
+terminal-window notebook > header.top > tabs > tab:checked:backdrop,
+terminal-window notebook tab:checked:backdrop {
+  color: #251327;
+  background-color: rgba(255, 239, 250, 0.94);
+  border-color: rgba(255, 247, 253, 0.72);
+  box-shadow: inset 0 -3px rgba(0, 217, 255, 0.92), inset 0 0 0 1px rgba(216, 51, 143, 0.28);
+}
+
+.sidebar,
+.navigation-sidebar,
+placessidebar,
+placessidebar .navigation-sidebar {
+  color: #2f1630;
+  background-color: rgba(239, 216, 244, 0.82);
+  border-color: rgba(207, 147, 200, 0.58);
+}
+
+paned > separator {
+  background-color: rgba(207, 147, 200, 0.58);
+  background-image: none;
+  box-shadow: none;
+}

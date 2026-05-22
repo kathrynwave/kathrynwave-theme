@@ -1,0 +1,247 @@
+/* kathrynwave GTK4/libadwaita user overrides.
+ * Palette variables only. libadwaita/Yaru keep widget geometry and controls.
+ */
+
+@define-color accent_color #e85aa8;
+@define-color accent_bg_color #d8338f;
+@define-color accent_fg_color #ffffff;
+@define-color destructive_bg_color #d9385e;
+@define-color destructive_fg_color #ffffff;
+@define-color success_bg_color #1fbf86;
+@define-color success_fg_color #201125;
+@define-color warning_bg_color #d99000;
+@define-color warning_fg_color #201125;
+@define-color error_bg_color #d9385e;
+@define-color error_fg_color #ffffff;
+@define-color window_bg_color rgba(246, 230, 248, 0.90);
+@define-color window_fg_color #251327;
+@define-color view_bg_color rgba(255, 247, 253, 0.86);
+@define-color view_fg_color #251327;
+@define-color headerbar_bg_color rgba(216, 51, 143, 0.88);
+@define-color headerbar_fg_color #fff7fd;
+@define-color headerbar_border_color #ffe3f6;
+@define-color headerbar_backdrop_color rgba(239, 198, 231, 0.86);
+@define-color headerbar_shade_color rgba(122, 44, 99, 0.24);
+@define-color headerbar_darker_shade_color rgba(66, 24, 59, 0.36);
+@define-color sidebar_bg_color rgba(239, 216, 244, 0.82);
+@define-color sidebar_fg_color #2f1630;
+@define-color sidebar_backdrop_color rgba(229, 204, 235, 0.78);
+@define-color sidebar_shade_color rgba(92, 44, 86, 0.22);
+@define-color sidebar_border_color rgba(207, 147, 200, 0.58);
+@define-color secondary_sidebar_bg_color rgba(232, 210, 240, 0.80);
+@define-color secondary_sidebar_fg_color #2f1630;
+@define-color secondary_sidebar_backdrop_color rgba(220, 198, 230, 0.76);
+@define-color secondary_sidebar_shade_color rgba(92, 44, 86, 0.20);
+@define-color secondary_sidebar_border_color rgba(207, 147, 200, 0.52);
+@define-color card_bg_color rgba(255, 249, 254, 0.76);
+@define-color card_fg_color #251327;
+@define-color card_shade_color rgba(122, 44, 99, 0.18);
+@define-color dialog_bg_color rgba(255, 249, 254, 0.92);
+@define-color dialog_fg_color #251327;
+@define-color popover_bg_color rgba(255, 250, 255, 0.94);
+@define-color popover_fg_color #251327;
+@define-color popover_shade_color rgba(122, 44, 99, 0.22);
+@define-color thumbnail_bg_color rgba(245, 232, 247, 0.80);
+@define-color thumbnail_fg_color #251327;
+@define-color shade_color rgba(122, 44, 99, 0.20);
+@define-color scrollbar_outline_color rgba(216, 51, 143, 0.28);
+
+:root {
+  --yaru-accent-color: #e85aa8;
+  --yaru-accent-bg-color: #d8338f;
+  --accent-color: #e85aa8;
+  --accent-bg-color: #d8338f;
+  --accent-fg-color: #ffffff;
+  --destructive-bg-color: #d9385e;
+  --destructive-fg-color: #ffffff;
+  --success-bg-color: #1fbf86;
+  --success-fg-color: #201125;
+  --warning-bg-color: #d99000;
+  --warning-fg-color: #201125;
+  --error-bg-color: #d9385e;
+  --error-fg-color: #ffffff;
+  --window-bg-color: rgba(246, 230, 248, 0.90);
+  --window-fg-color: #251327;
+  --view-bg-color: rgba(255, 247, 253, 0.86);
+  --view-fg-color: #251327;
+  --headerbar-bg-color: rgba(216, 51, 143, 0.88);
+  --headerbar-fg-color: #fff7fd;
+  --headerbar-border-color: #ffe3f6;
+  --headerbar-backdrop-color: rgba(239, 198, 231, 0.86);
+  --headerbar-shade-color: rgba(122, 44, 99, 0.24);
+  --headerbar-darker-shade-color: rgba(66, 24, 59, 0.36);
+  --sidebar-bg-color: rgba(239, 216, 244, 0.82);
+  --sidebar-fg-color: #2f1630;
+  --sidebar-backdrop-color: rgba(229, 204, 235, 0.78);
+  --sidebar-border-color: rgba(207, 147, 200, 0.58);
+  --sidebar-shade-color: rgba(92, 44, 86, 0.22);
+  --secondary-sidebar-bg-color: rgba(232, 210, 240, 0.80);
+  --secondary-sidebar-fg-color: #2f1630;
+  --secondary-sidebar-backdrop-color: rgba(220, 198, 230, 0.76);
+  --secondary-sidebar-border-color: rgba(207, 147, 200, 0.52);
+  --secondary-sidebar-shade-color: rgba(92, 44, 86, 0.20);
+  --card-bg-color: rgba(255, 249, 254, 0.76);
+  --card-fg-color: #251327;
+  --card-shade-color: rgba(122, 44, 99, 0.18);
+  --dialog-bg-color: rgba(255, 249, 254, 0.92);
+  --dialog-fg-color: #251327;
+  --popover-bg-color: rgba(255, 250, 255, 0.94);
+  --popover-fg-color: #251327;
+  --popover-shade-color: rgba(122, 44, 99, 0.22);
+  --thumbnail-bg-color: rgba(245, 232, 247, 0.80);
+  --thumbnail-fg-color: #251327;
+  --shade-color: rgba(122, 44, 99, 0.20);
+  --scrollbar-outline-color: rgba(216, 51, 143, 0.28);
+  --overview-bg-color: rgba(245, 232, 247, 0.82);
+  --overview-fg-color: #251327;
+  --border-color: rgba(216, 51, 143, 0.28);
+}
+
+window.desktopwindow,
+window.desktopwindow.background,
+.desktopwindow,
+.desktopwindow.background {
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  box-shadow: none;
+}
+
+headerbar,
+.titlebar {
+  color: #fff7fd;
+  background-color: rgba(216, 51, 143, 0.88);
+  background-image: none;
+}
+
+headerbar:backdrop,
+.titlebar:backdrop {
+  color: #4b2044;
+  background-color: rgba(239, 198, 231, 0.86);
+  background-image: none;
+}
+
+headerbar windowhandle,
+headerbar box,
+headerbar stack,
+headerbar centerbox,
+.titlebar windowhandle,
+.titlebar box,
+.titlebar stack,
+.titlebar centerbox {
+  background-color: transparent;
+  background-image: none;
+}
+
+windowcontrols button,
+headerbar windowcontrols button,
+.titlebar windowcontrols button,
+headerbar button.titlebutton,
+.titlebar button.titlebutton {
+  color: #fff7fd;
+  background-color: rgba(255, 247, 253, 0.14);
+  background-image: none;
+  border-color: rgba(255, 227, 246, 0.34);
+  box-shadow: none;
+  text-shadow: none;
+}
+
+windowcontrols button:hover,
+headerbar windowcontrols button:hover,
+.titlebar windowcontrols button:hover,
+headerbar button.titlebutton:hover,
+.titlebar button.titlebutton:hover {
+  color: #ffffff;
+  background-color: rgba(255, 247, 253, 0.24);
+  border-color: rgba(255, 247, 253, 0.56);
+}
+
+windowcontrols button:active,
+headerbar windowcontrols button:active,
+.titlebar windowcontrols button:active,
+headerbar button.titlebutton:active,
+.titlebar button.titlebutton:active {
+  color: #ffffff;
+  background-color: rgba(92, 12, 84, 0.30);
+}
+
+windowcontrols button.close:hover,
+headerbar windowcontrols button.close:hover,
+.titlebar windowcontrols button.close:hover,
+headerbar button.titlebutton.close:hover,
+.titlebar button.titlebutton.close:hover {
+  color: #ffffff;
+  background-color: #d9385e;
+  border-color: #ffb3c6;
+}
+
+windowcontrols button image,
+headerbar windowcontrols button image,
+.titlebar windowcontrols button image,
+headerbar button.titlebutton image,
+.titlebar button.titlebutton image {
+  color: inherit;
+  -gtk-icon-shadow: none;
+}
+
+windowcontrols button:backdrop,
+headerbar windowcontrols button:backdrop,
+.titlebar windowcontrols button:backdrop,
+headerbar button.titlebutton:backdrop,
+.titlebar button.titlebutton:backdrop {
+  color: #fff7fd;
+  background-color: rgba(255, 247, 253, 0.16);
+  border-color: rgba(255, 247, 253, 0.38);
+}
+
+windowcontrols button:backdrop image,
+headerbar windowcontrols button:backdrop image,
+.titlebar windowcontrols button:backdrop image,
+headerbar button.titlebutton:backdrop image,
+.titlebar button.titlebutton:backdrop image {
+  color: inherit;
+  opacity: 1;
+  -gtk-icon-shadow: none;
+}
+
+toolbarview > .top-bar {
+  color: #fff7fd;
+  background-color: rgba(216, 51, 143, 0.88);
+  background-image: none;
+}
+
+toolbarview > .top-bar:backdrop {
+  color: #4b2044;
+  background-color: rgba(239, 198, 231, 0.86);
+  background-image: none;
+}
+
+toolbarview > .top-bar headerbar,
+toolbarview > .top-bar headerbar:backdrop,
+toolbarview > .top-bar headerbar > windowhandle,
+toolbarview > .top-bar headerbar:backdrop > windowhandle {
+  color: inherit;
+  background-color: transparent;
+  background-image: none;
+}
+
+.sidebar-pane:dir(ltr),
+.sidebar-pane.end:dir(rtl) {
+  box-shadow: inset -1px 0 rgba(207, 147, 200, 0.58);
+}
+
+.sidebar-pane:dir(rtl),
+.sidebar-pane.end:dir(ltr) {
+  box-shadow: inset 1px 0 rgba(207, 147, 200, 0.58);
+}
+
+overlay-split-view > border {
+  background-color: rgba(207, 147, 200, 0.58);
+}
+
+overlay-split-view > shadow.left {
+  background-image: linear-gradient(to right, rgba(122, 44, 99, 0.20), transparent 24px);
+}
+
+overlay-split-view > shadow.right {
+  background-image: linear-gradient(to left, rgba(122, 44, 99, 0.20), transparent 24px);
+}

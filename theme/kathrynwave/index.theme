@@ -1,0 +1,16 @@
+[Desktop Entry]
+Name=kathrynwave
+Type=X-GNOME-Metatheme
+Comment=kathrynwave adaptive color theme based on Ubuntu Yaru magenta
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=kathrynwave
+MetacityTheme=kathrynwave
+IconTheme=Yaru-magenta
+CursorTheme=Yaru
+CursorSize=24
+X-Yaru-Dark=false
+X-Yaru-Accent-Name=magenta
+X-Yaru-Accent-Color=#d8338f
+X-Yaru-Accent-Color-Optimized=#ff7ad8

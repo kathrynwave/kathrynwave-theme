@@ -1,0 +1,247 @@
+/* kathrynwave GTK4/libadwaita user overrides.
+ * Palette variables only. libadwaita/Yaru keep widget geometry and controls.
+ */
+
+@define-color accent_color #ff79c6;
+@define-color accent_bg_color #ff3f9d;
+@define-color accent_fg_color #ffffff;
+@define-color destructive_bg_color #ff5c7d;
+@define-color destructive_fg_color #ffffff;
+@define-color success_bg_color #39e6a8;
+@define-color success_fg_color #12061f;
+@define-color warning_bg_color #f4b84f;
+@define-color warning_fg_color #12061f;
+@define-color error_bg_color #ff5c7d;
+@define-color error_fg_color #ffffff;
+@define-color window_bg_color rgba(18, 8, 31, 0.88);
+@define-color window_fg_color #fff2fb;
+@define-color view_bg_color rgba(12, 5, 23, 0.82);
+@define-color view_fg_color #fff2fb;
+@define-color headerbar_bg_color rgba(139, 27, 106, 0.88);
+@define-color headerbar_fg_color #fff2fb;
+@define-color headerbar_border_color #fff2fb;
+@define-color headerbar_backdrop_color rgba(79, 22, 68, 0.78);
+@define-color headerbar_shade_color rgba(18, 8, 31, 0.50);
+@define-color headerbar_darker_shade_color rgba(8, 4, 17, 0.88);
+@define-color sidebar_bg_color rgba(27, 10, 45, 0.76);
+@define-color sidebar_fg_color #fff2fb;
+@define-color sidebar_backdrop_color rgba(18, 8, 31, 0.68);
+@define-color sidebar_shade_color rgba(8, 4, 17, 0.46);
+@define-color sidebar_border_color rgba(12, 5, 23, 0.92);
+@define-color secondary_sidebar_bg_color rgba(21, 8, 36, 0.72);
+@define-color secondary_sidebar_fg_color #fff2fb;
+@define-color secondary_sidebar_backdrop_color rgba(15, 6, 27, 0.66);
+@define-color secondary_sidebar_shade_color rgba(8, 4, 17, 0.46);
+@define-color secondary_sidebar_border_color rgba(12, 5, 23, 0.90);
+@define-color card_bg_color rgba(25, 9, 43, 0.78);
+@define-color card_fg_color #fff2fb;
+@define-color card_shade_color rgba(8, 4, 17, 0.44);
+@define-color dialog_bg_color rgba(25, 9, 43, 0.90);
+@define-color dialog_fg_color #fff2fb;
+@define-color popover_bg_color rgba(25, 9, 43, 0.92);
+@define-color popover_fg_color #fff2fb;
+@define-color popover_shade_color rgba(8, 4, 17, 0.50);
+@define-color thumbnail_bg_color rgba(14, 5, 27, 0.76);
+@define-color thumbnail_fg_color #fff2fb;
+@define-color shade_color rgba(8, 4, 17, 0.50);
+@define-color scrollbar_outline_color rgba(255, 63, 157, 0.32);
+
+:root {
+  --yaru-accent-color: #ff79c6;
+  --yaru-accent-bg-color: #ff3f9d;
+  --accent-color: #ff79c6;
+  --accent-bg-color: #ff3f9d;
+  --accent-fg-color: #ffffff;
+  --destructive-bg-color: #ff5c7d;
+  --destructive-fg-color: #ffffff;
+  --success-bg-color: #39e6a8;
+  --success-fg-color: #12061f;
+  --warning-bg-color: #f4b84f;
+  --warning-fg-color: #12061f;
+  --error-bg-color: #ff5c7d;
+  --error-fg-color: #ffffff;
+  --window-bg-color: rgba(18, 8, 31, 0.88);
+  --window-fg-color: #fff2fb;
+  --view-bg-color: rgba(12, 5, 23, 0.82);
+  --view-fg-color: #fff2fb;
+  --headerbar-bg-color: rgba(139, 27, 106, 0.88);
+  --headerbar-fg-color: #fff2fb;
+  --headerbar-border-color: #fff2fb;
+  --headerbar-backdrop-color: rgba(79, 22, 68, 0.78);
+  --headerbar-shade-color: rgba(18, 8, 31, 0.50);
+  --headerbar-darker-shade-color: rgba(8, 4, 17, 0.88);
+  --sidebar-bg-color: rgba(27, 10, 45, 0.76);
+  --sidebar-fg-color: #fff2fb;
+  --sidebar-backdrop-color: rgba(18, 8, 31, 0.68);
+  --sidebar-border-color: rgba(12, 5, 23, 0.92);
+  --sidebar-shade-color: rgba(8, 4, 17, 0.46);
+  --secondary-sidebar-bg-color: rgba(21, 8, 36, 0.72);
+  --secondary-sidebar-fg-color: #fff2fb;
+  --secondary-sidebar-backdrop-color: rgba(15, 6, 27, 0.66);
+  --secondary-sidebar-border-color: rgba(12, 5, 23, 0.90);
+  --secondary-sidebar-shade-color: rgba(8, 4, 17, 0.46);
+  --card-bg-color: rgba(25, 9, 43, 0.78);
+  --card-fg-color: #fff2fb;
+  --card-shade-color: rgba(8, 4, 17, 0.44);
+  --dialog-bg-color: rgba(25, 9, 43, 0.90);
+  --dialog-fg-color: #fff2fb;
+  --popover-bg-color: rgba(25, 9, 43, 0.92);
+  --popover-fg-color: #fff2fb;
+  --popover-shade-color: rgba(8, 4, 17, 0.50);
+  --thumbnail-bg-color: rgba(14, 5, 27, 0.76);
+  --thumbnail-fg-color: #fff2fb;
+  --shade-color: rgba(8, 4, 17, 0.50);
+  --scrollbar-outline-color: rgba(255, 63, 157, 0.32);
+  --overview-bg-color: rgba(14, 5, 27, 0.76);
+  --overview-fg-color: #fff2fb;
+  --border-color: rgba(255, 63, 157, 0.34);
+}
+
+window.desktopwindow,
+window.desktopwindow.background,
+.desktopwindow,
+.desktopwindow.background {
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  box-shadow: none;
+}
+
+headerbar,
+.titlebar {
+  color: #fff2fb;
+  background-color: rgba(139, 27, 106, 0.88);
+  background-image: none;
+}
+
+headerbar:backdrop,
+.titlebar:backdrop {
+  color: #f0caee;
+  background-color: rgba(79, 22, 68, 0.78);
+  background-image: none;
+}
+
+headerbar windowhandle,
+headerbar box,
+headerbar stack,
+headerbar centerbox,
+.titlebar windowhandle,
+.titlebar box,
+.titlebar stack,
+.titlebar centerbox {
+  background-color: transparent;
+  background-image: none;
+}
+
+windowcontrols button,
+headerbar windowcontrols button,
+.titlebar windowcontrols button,
+headerbar button.titlebutton,
+.titlebar button.titlebutton {
+  color: #fff2fb;
+  background-color: rgba(255, 242, 251, 0.14);
+  background-image: none;
+  border-color: rgba(255, 121, 198, 0.34);
+  box-shadow: none;
+  text-shadow: none;
+}
+
+windowcontrols button:hover,
+headerbar windowcontrols button:hover,
+.titlebar windowcontrols button:hover,
+headerbar button.titlebutton:hover,
+.titlebar button.titlebutton:hover {
+  color: #ffffff;
+  background-color: rgba(255, 121, 198, 0.26);
+  border-color: rgba(255, 203, 235, 0.56);
+}
+
+windowcontrols button:active,
+headerbar windowcontrols button:active,
+.titlebar windowcontrols button:active,
+headerbar button.titlebutton:active,
+.titlebar button.titlebutton:active {
+  color: #ffffff;
+  background-color: rgba(18, 8, 31, 0.36);
+}
+
+windowcontrols button.close:hover,
+headerbar windowcontrols button.close:hover,
+.titlebar windowcontrols button.close:hover,
+headerbar button.titlebutton.close:hover,
+.titlebar button.titlebutton.close:hover {
+  color: #ffffff;
+  background-color: #ff5c7d;
+  border-color: #ffd0dc;
+}
+
+windowcontrols button image,
+headerbar windowcontrols button image,
+.titlebar windowcontrols button image,
+headerbar button.titlebutton image,
+.titlebar button.titlebutton image {
+  color: inherit;
+  -gtk-icon-shadow: none;
+}
+
+windowcontrols button:backdrop,
+headerbar windowcontrols button:backdrop,
+.titlebar windowcontrols button:backdrop,
+headerbar button.titlebutton:backdrop,
+.titlebar button.titlebutton:backdrop {
+  color: #fff2fb;
+  background-color: rgba(255, 242, 251, 0.10);
+  border-color: rgba(255, 242, 251, 0.34);
+}
+
+windowcontrols button:backdrop image,
+headerbar windowcontrols button:backdrop image,
+.titlebar windowcontrols button:backdrop image,
+headerbar button.titlebutton:backdrop image,
+.titlebar button.titlebutton:backdrop image {
+  color: inherit;
+  opacity: 1;
+  -gtk-icon-shadow: none;
+}
+
+toolbarview > .top-bar {
+  color: #fff2fb;
+  background-color: rgba(139, 27, 106, 0.88);
+  background-image: none;
+}
+
+toolbarview > .top-bar:backdrop {
+  color: #f0caee;
+  background-color: rgba(79, 22, 68, 0.78);
+  background-image: none;
+}
+
+toolbarview > .top-bar headerbar,
+toolbarview > .top-bar headerbar:backdrop,
+toolbarview > .top-bar headerbar > windowhandle,
+toolbarview > .top-bar headerbar:backdrop > windowhandle {
+  color: inherit;
+  background-color: transparent;
+  background-image: none;
+}
+
+.sidebar-pane:dir(ltr),
+.sidebar-pane.end:dir(rtl) {
+  box-shadow: inset -1px 0 rgba(12, 5, 23, 0.92);
+}
+
+.sidebar-pane:dir(rtl),
+.sidebar-pane.end:dir(ltr) {
+  box-shadow: inset 1px 0 rgba(12, 5, 23, 0.92);
+}
+
+overlay-split-view > border {
+  background-color: rgba(12, 5, 23, 0.92);
+}
+
+overlay-split-view > shadow.left {
+  background-image: linear-gradient(to right, rgba(8, 4, 17, 0.34), transparent 24px);
+}
+
+overlay-split-view > shadow.right {
+  background-image: linear-gradient(to left, rgba(8, 4, 17, 0.34), transparent 24px);
+}

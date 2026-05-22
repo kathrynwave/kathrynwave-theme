@@ -1,0 +1,30 @@
+/* kathrynwave GNOME Shell color overrides.
+ * Start from Yaru dark and keep only one static top bar accent.
+ */
+
+@import url("/usr/share/gnome-shell/theme/Yaru-dark/gnome-shell.css");
+
+#panel {
+  background-color: rgba(255, 45, 149, 0.72) !important;
+}
+
+#panel.unlock-screen,
+#panel.login-screen,
+#panel:overview {
+  background-color: rgba(255, 45, 149, 0.72) !important;
+}
+
+#panel .panel-button,
+#panel .panel-button .clock {
+  color: #fff2fb;
+}
+
+#dashtodockContainer.bottom #dash .dash-background {
+  background-color: rgba(255, 45, 149, 0.34) !important;
+  border: 1px solid rgba(255, 92, 200, 0.32) !important;
+  box-shadow: 0 10px 32px rgba(42, 6, 70, 0.28);
+}
+
+#dashtodockContainer.bottom #dash .dash-separator {
+  background-color: rgba(255, 242, 251, 0.30);
+}

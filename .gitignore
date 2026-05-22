@@ -1,0 +1,4 @@
+.kathrynwave-state/
+.env
+.env.*
+!.env.example

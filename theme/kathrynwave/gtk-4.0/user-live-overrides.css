@@ -1,0 +1,13 @@
+/* kathrynwave GTK4 live guards.
+ * Keep this mode-neutral so GNOME's regular light/dark switcher can choose
+ * gtk.css or gtk-dark.css without user CSS pinning one palette.
+ */
+
+window.desktopwindow,
+window.desktopwindow.background,
+.desktopwindow,
+.desktopwindow.background {
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  box-shadow: none;
+}
